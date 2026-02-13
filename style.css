@@ -1,0 +1,343 @@
+/* ------------------ Global Reset ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ------------------ Body ------------------ */
+body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ------------------ Links ------------------ */
+a {
+    color: #38bdf8;        /* Sky blue for all links */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------ Header ------------------ */
+header {
+    background: #1e293b;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 22px;
+    color: #38bdf8;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+#main-nav ul li a {
+    color: #38bdf8;       /* Sky blue nav links */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#main-nav ul li a:hover {
+    color: #3b82f6;       /* Slightly darker blue on hover */
+}
+
+/* ------------------ Sections ------------------ */
+section {
+    padding: 80px 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #38bdf8;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card h4, .card h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* ------------------ Home Section ------------------ */
+.homepage-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38bdf8;
+    display: block;
+    margin-left: 150px;
+
+    /* Transition */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Effect */
+.profile-image img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.6);
+}
+
+.home-text-container {
+    max-width: 600px;
+    margin-left: 30px;
+    padding: 25px;
+    background-color: #1e293b;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-text-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.3);
+}
+
+.home-text-container h1 {
+    font-size: 36px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.home-text-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ------------------ About Section ------------------ */
+#about h2{
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-container .card {
+    flex: 1 1 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ------------------ Skills Section ------------------ */
+#skills h2{
+     text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-container .card {
+    flex: 1 1 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ------------------ Education Section ------------------ */
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.education-container .card {
+    flex: 1 1 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ------------------ Projects Section ------------------ */
+#projects h2{
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grid .card {
+    flex: 1 1 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ------------------ Contact Section ------------------ */
+#contact {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact .contact-card {
+    flex: 1 1 400px;
+    max-width: 500px;
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+/* Contact Form Styling */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    background: #0f172a;
+    color: #f1f5f9;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+#contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form button:hover {
+    background: #3b82f6;
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+    background: #1e293b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ------------------ Responsive ------------------ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .homepage-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-text-container h1 {
+        font-size: 28px;
+    }
+
+    .home-text-container h2 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .education-container, 
+    .skills-container, 
+    .grid,
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
